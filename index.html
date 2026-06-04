@@ -10,18 +10,22 @@
 <body>
     <!-- Navegación -->
     <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <i class="fas fa-water"></i> Ocean Community
+        <div class="nav-container">
+            <div class="nav-left">
+                <div class="logo">
+                    <span class="logo-icon">🌊</span>
+                    <span class="logo-text">Ocean Community</span>
+                </div>
             </div>
-            <ul class="nav-links">
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-                <li><a href="#miembros">Miembros</a></li>
-                <li><a href="#torneos">Torneos</a></li>
-                <li><a href="#caracteristicas">Beneficios</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+            <div class="nav-right">
+                <ul class="nav-links">
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#comunidad">Comunidad</a></li>
+                    <li><a href="#torneos">Torneos</a></li>
+                    <li><a href="#miembros">Miembros</a></li>
+                </ul>
+                <button class="btn-join" onclick="scrollToSection('contacto')">Únete</button>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -33,380 +37,336 @@
     <!-- Sección Hero -->
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <h1>Bienvenido a Ocean Community</h1>
-            <p>La mejor comunidad de Brawl Stars | Torneos • Entrenamientos • Diversión</p>
-            <div class="hero-buttons">
-                <button class="cta-button btn-primary" onclick="scrollToSection('sobre-nosotros')">Descubre la Comunidad</button>
-                <button class="cta-button btn-secondary" onclick="scrollToSection('contacto')">Únete Ahora</button>
+            <div class="hero-text">
+                <h1>Bienvenido a Ocean Community</h1>
+                <p>La mejor comunidad de jugadores de Brawl Stars. Compite, entrena y crece con nosotros.</p>
+                <button class="btn-primary" onclick="scrollToSection('contacto')">Unirse a la Comunidad</button>
             </div>
-        </div>
-        <div class="hero-animation">
-            <div class="floating-item">⚡</div>
-        </div>
-    </section>
-
-    <!-- Sección Sobre Nosotros -->
-    <section id="sobre-nosotros" class="about">
-        <div class="container">
-            <h2>Sobre Ocean Community</h2>
-            <p class="section-subtitle">Conectando a los mejores jugadores de Brawl Stars</p>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Ocean Community es una comunidad vibrant de jugadores de Brawl Stars dedicados a mejorar juntos. Nos enfocamos en proporcionar un ambiente amigable y competitivo donde todos pueden crecer.</p>
-                    <div class="about-features">
-                        <div class="feature-item">
-                            <i class="fas fa-users"></i>
-                            <h3>Comunidad Activa</h3>
-                            <p>+500 miembros participando diariamente</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-gamepad"></i>
-                            <h3>Torneos Regulares</h3>
-                            <p>Competencias semanales con premios</p>
-                        </div>
-                        <div class="feature-item">
-                            <i class="fas fa-trophy"></i>
-                            <h3>Entrenamientos</h3>
-                            <p>Sesiones de coaching con jugadores expertos</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <div class="image-placeholder">
-                        <i class="fas fa-crown"></i>
+            <div class="hero-visual">
+                <div class="hero-card">
+                    <div class="card-icon">⚡</div>
+                    <div class="card-content">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-text">Miembros</div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Miembros -->
-    <section id="miembros" class="members">
-        <div class="container">
-            <h2>Nuestros Miembros Destacados</h2>
-            <p class="section-subtitle">Los mejores jugadores de la comunidad</p>
-            <div class="members-grid">
-                <div class="member-card">
-                    <div class="member-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <h3>ProPlayer_01</h3>
-                    <p class="member-rank">Trofeos: 45,000</p>
-                    <p class="member-role">Capitán</p>
-                    <div class="member-brawlers">
-                        <span class="brawler">Shelly</span>
-                        <span class="brawler">Colt</span>
-                        <span class="brawler">Bull</span>
-                    </div>
-                </div>
-
-                <div class="member-card">
-                    <div class="member-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <h3>OceanKing</h3>
-                    <p class="member-rank">Trofeos: 42,500</p>
-                    <p class="member-role">Co-Capitán</p>
-                    <div class="member-brawlers">
-                        <span class="brawler">Poco</span>
-                        <span class="brawler">Barley</span>
-                        <span class="brawler">Sprout</span>
-                    </div>
-                </div>
-
-                <div class="member-card">
-                    <div class="member-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <h3>StrikeForce</h3>
-                    <p class="member-rank">Trofeos: 40,800</p>
-                    <p class="member-role">Moderador</p>
-                    <div class="member-brawlers">
-                        <span class="brawler">Bea</span>
-                        <span class="brawler">Sandy</span>
-                        <span class="brawler">Buzz</span>
-                    </div>
-                </div>
-
-                <div class="member-card">
-                    <div class="member-avatar" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <h3>SkyWalker</h3>
-                    <p class="member-rank">Trofeos: 39,200</p>
-                    <p class="member-role">Entrenador</p>
-                    <div class="member-brawlers">
-                        <span class="brawler">Nita</span>
-                        <span class="brawler">Leon</span>
-                        <span class="brawler">Crow</span>
-                    </div>
-                </div>
-
-                <div class="member-card">
-                    <div class="member-avatar" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <h3>NeonGamer</h3>
-                    <p class="member-rank">Trofeos: 38,500</p>
-                    <p class="member-role">Streamer</p>
-                    <div class="member-brawlers">
-                        <span class="brawler">Edgar</span>
-                        <span class="brawler">Amber</span>
-                        <span class="brawler">Piper</span>
-                    </div>
-                </div>
-
-                <div class="member-card">
-                    <div class="member-avatar" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
-                        <i class="fas fa-user"></i>
-                    </div>
-                    <h3>TitanForce</h3>
-                    <p class="member-rank">Trofeos: 37,800</p>
-                    <p class="member-role">Miembro VIP</p>
-                    <div class="member-brawlers">
-                        <span class="brawler">Frank</span>
-                        <span class="brawler">Gale</span>
-                        <span class="brawler">Colette</span>
-                    </div>
-                </div>
+    <!-- Sección Comunidad -->
+    <section id="comunidad" class="community">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Sobre Nuestra Comunidad</h2>
+                <p>Somos una comunidad dedicada a mejorar en Brawl Stars juntos</p>
             </div>
-        </div>
-    </section>
-
-    <!-- Sección de Torneos -->
-    <section id="torneos" class="tournaments">
-        <div class="container">
-            <h2>Torneos Próximos</h2>
-            <p class="section-subtitle">Compite y demuestra tu habilidad</p>
-            <div class="tournaments-grid">
-                <div class="tournament-card active">
-                    <div class="tournament-header">
-                        <span class="tournament-badge">Activo</span>
-                        <h3>Torneo 3v3 - Solo</h3>
-                    </div>
-                    <div class="tournament-info">
-                        <div class="info-row">
-                            <i class="fas fa-calendar"></i>
-                            <span>Sábado 22:00 UTC</span>
-                        </div>
-                        <div class="info-row">
-                            <i class="fas fa-users"></i>
-                            <span>32 Equipos</span>
-                        </div>
-                        <div class="info-row">
-                            <i class="fas fa-trophy"></i>
-                            <span>Premio: 100,000 Puntos</span>
-                        </div>
-                    </div>
-                    <button class="btn-register">Inscribirse Ahora</button>
-                </div>
-
-                <div class="tournament-card">
-                    <div class="tournament-header">
-                        <span class="tournament-badge soon">Próximo</span>
-                        <h3>Dúo - Competencia</h3>
-                    </div>
-                    <div class="tournament-info">
-                        <div class="info-row">
-                            <i class="fas fa-calendar"></i>
-                            <span>Viernes 21:00 UTC</span>
-                        </div>
-                        <div class="info-row">
-                            <i class="fas fa-users"></i>
-                            <span>24 Equipos</span>
-                        </div>
-                        <div class="info-row">
-                            <i class="fas fa-trophy"></i>
-                            <span>Premio: 75,000 Puntos</span>
-                        </div>
-                    </div>
-                    <button class="btn-register">Inscribirse Ahora</button>
-                </div>
-
-                <div class="tournament-card">
-                    <div class="tournament-header">
-                        <span class="tournament-badge soon">Próximo</span>
-                        <h3>Showdown - Todos</h3>
-                    </div>
-                    <div class="tournament-info">
-                        <div class="info-row">
-                            <i class="fas fa-calendar"></i>
-                            <span>Domingo 20:00 UTC</span>
-                        </div>
-                        <div class="info-row">
-                            <i class="fas fa-users"></i>
-                            <span>64 Jugadores</span>
-                        </div>
-                        <div class="info-row">
-                            <i class="fas fa-trophy"></i>
-                            <span>Premio: 150,000 Puntos</span>
-                        </div>
-                    </div>
-                    <button class="btn-register">Inscribirse Ahora</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Características/Beneficios -->
-    <section id="caracteristicas" class="features">
-        <div class="container">
-            <h2>Beneficios de Ser Miembro</h2>
-            <p class="section-subtitle">Disfruta de ventajas exclusivas</p>
+            
             <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-video"></i>
-                    </div>
-                    <h3>Entrenamientos en Vivo</h3>
-                    <p>Aprende estrategias de los mejores jugadores con sesiones de coaching personalizadas</p>
+                <div class="feature-box">
+                    <div class="feature-icon">👥</div>
+                    <h3>Comunidad Activa</h3>
+                    <p>Conecta con jugadores de todo el mundo en un ambiente amigable y competitivo</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-comments"></i>
-                    </div>
+                <div class="feature-box">
+                    <div class="feature-icon">🏆</div>
+                    <h3>Torneos Regulares</h3>
+                    <p>Participa en torneos semanales con premios y reconocimiento</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">📚</div>
+                    <h3>Entrenamientos</h3>
+                    <p>Aprende de los mejores jugadores con sesiones de coaching</p>
+                </div>
+                <div class="feature-box">
+                    <div class="feature-icon">💬</div>
                     <h3>Discord Exclusivo</h3>
-                    <p>Acceso a servidores de Discord con canales especializados por brawler y modo</p>
+                    <p>Acceso a servidor Discord con canales especializados</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <h3>Insignias Especiales</h3>
-                    <p>Obtén insignias que demuestren tu nivel y experiencia en la comunidad</p>
+                <div class="feature-box">
+                    <div class="feature-icon">⭐</div>
+                    <h3>Insignias VIP</h3>
+                    <p>Obtén insignias que demuestren tu nivel y experiencia</p>
                 </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-gift"></i>
-                    </div>
+                <div class="feature-box">
+                    <div class="feature-icon">🎁</div>
                     <h3>Premios Mensuales</h3>
-                    <p>Participa en rifas mensuales con premios en skins y temas exclusivos</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-gamepad"></i>
-                    </div>
-                    <h3>Equipos Competitivos</h3>
-                    <p>Únete a equipos de juego competitivo para participar en torneos profesionales</p>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
-                    <h3>Red de Amigos</h3>
-                    <p>Conecta con jugadores de todo el mundo y expande tu red de gaming</p>
+                    <p>Rifas mensuales con skins y temas exclusivos</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Estadísticas -->
-    <section class="stats">
-        <div class="container">
-            <div class="stat-item">
-                <div class="stat-number">500+</div>
-                <div class="stat-label">Miembros Activos</div>
+    <!-- Sección Torneos -->
+    <section id="torneos" class="tournaments">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Próximos Torneos</h2>
+                <p>Competencias emocionantes esperando por ti</p>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">150+</div>
-                <div class="stat-label">Torneos Realizados</div>
+
+            <div class="tournaments-list">
+                <div class="tournament-item active">
+                    <div class="tournament-badge">Activo</div>
+                    <div class="tournament-body">
+                        <div class="tournament-title">
+                            <h3>3v3 Solo - Modo Clásico</h3>
+                            <span class="tournament-type">32 Equipos</span>
+                        </div>
+                        <div class="tournament-details">
+                            <span><i class="fas fa-calendar"></i> Sábado 22:00 UTC</span>
+                            <span><i class="fas fa-trophy"></i> 100,000 Puntos</span>
+                        </div>
+                    </div>
+                    <button class="btn-small">Participar</button>
+                </div>
+
+                <div class="tournament-item">
+                    <div class="tournament-badge coming">Próximo</div>
+                    <div class="tournament-body">
+                        <div class="tournament-title">
+                            <h3>Dúo - Competencia Especial</h3>
+                            <span class="tournament-type">24 Equipos</span>
+                        </div>
+                        <div class="tournament-details">
+                            <span><i class="fas fa-calendar"></i> Viernes 21:00 UTC</span>
+                            <span><i class="fas fa-trophy"></i> 75,000 Puntos</span>
+                        </div>
+                    </div>
+                    <button class="btn-small">Participar</button>
+                </div>
+
+                <div class="tournament-item">
+                    <div class="tournament-badge coming">Próximo</div>
+                    <div class="tournament-body">
+                        <div class="tournament-title">
+                            <h3>Showdown - Todos Los Niveles</h3>
+                            <span class="tournament-type">64 Jugadores</span>
+                        </div>
+                        <div class="tournament-details">
+                            <span><i class="fas fa-calendar"></i> Domingo 20:00 UTC</span>
+                            <span><i class="fas fa-trophy"></i> 150,000 Puntos</span>
+                        </div>
+                    </div>
+                    <button class="btn-small">Participar</button>
+                </div>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">2.5M+</div>
-                <div class="stat-label">Trofeos en Total</div>
+        </div>
+    </section>
+
+    <!-- Sección Miembros Destacados -->
+    <section id="miembros" class="members">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Miembros Destacados</h2>
+                <p>Los mejores jugadores de Ocean Community</p>
             </div>
-            <div class="stat-item">
-                <div class="stat-number">24/7</div>
-                <div class="stat-label">Comunidad Activa</div>
+
+            <div class="members-grid">
+                <div class="member-box">
+                    <div class="member-header">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #667eea, #764ba2);">
+                            <i class="fas fa-crown"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>ProPlayer_01</h3>
+                            <p class="member-title">Capitán</p>
+                        </div>
+                    </div>
+                    <div class="member-stats">
+                        <span class="stat">45,000 Trofeos</span>
+                    </div>
+                    <div class="member-tags">
+                        <span class="tag">Shelly</span>
+                        <span class="tag">Colt</span>
+                        <span class="tag">Bull</span>
+                    </div>
+                </div>
+
+                <div class="member-box">
+                    <div class="member-header">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>OceanKing</h3>
+                            <p class="member-title">Co-Capitán</p>
+                        </div>
+                    </div>
+                    <div class="member-stats">
+                        <span class="stat">42,500 Trofeos</span>
+                    </div>
+                    <div class="member-tags">
+                        <span class="tag">Poco</span>
+                        <span class="tag">Barley</span>
+                        <span class="tag">Sprout</span>
+                    </div>
+                </div>
+
+                <div class="member-box">
+                    <div class="member-header">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
+                            <i class="fas fa-zap"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>StrikeForce</h3>
+                            <p class="member-title">Moderador</p>
+                        </div>
+                    </div>
+                    <div class="member-stats">
+                        <span class="stat">40,800 Trofeos</span>
+                    </div>
+                    <div class="member-tags">
+                        <span class="tag">Bea</span>
+                        <span class="tag">Sandy</span>
+                        <span class="tag">Buzz</span>
+                    </div>
+                </div>
+
+                <div class="member-box">
+                    <div class="member-header">
+                        <div class="member-avatar" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
+                            <i class="fas fa-gamepad"></i>
+                        </div>
+                        <div class="member-info">
+                            <h3>SkyWalker</h3>
+                            <p class="member-title">Entrenador</p>
+                        </div>
+                    </div>
+                    <div class="member-stats">
+                        <span class="stat">39,200 Trofeos</span>
+                    </div>
+                    <div class="member-tags">
+                        <span class="tag">Nita</span>
+                        <span class="tag">Leon</span>
+                        <span class="tag">Crow</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Estadísticas -->
+    <section class="stats-section">
+        <div class="section-container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <div class="stat-big">500+</div>
+                    <div class="stat-label">Miembros Activos</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-big">150+</div>
+                    <div class="stat-label">Torneos Realizados</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-big">2.5M+</div>
+                    <div class="stat-label">Trofeos en Total</div>
+                </div>
+                <div class="stat-card">
+                    <div class="stat-big">24/7</div>
+                    <div class="stat-label">Comunidad Activa</div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Sección CTA -->
-    <section class="cta-section">
-        <div class="container">
+    <section class="cta-main">
+        <div class="section-container cta-content">
             <h2>¿Listo para Unirte?</h2>
             <p>Sé parte de la mejor comunidad de Brawl Stars y lleva tu juego al siguiente nivel</p>
-            <button class="cta-button btn-large" onclick="scrollToSection('contacto')">Únete a Ocean Community</button>
+            <button class="btn-large" onclick="scrollToSection('contacto')">Unirse Ahora</button>
         </div>
     </section>
 
-    <!-- Sección de Contacto -->
-    <section id="contacto" class="contact">
-        <div class="container">
-            <h2>¡Únete a Nosotros!</h2>
-            <p class="section-subtitle">Completa el formulario para ser parte de Ocean Community</p>
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2>Únete a Ocean Community</h2>
+                <p>Completa el formulario para ser parte de nuestra familia</p>
+            </div>
+
             <div class="contact-wrapper">
-                <div class="contact-info">
-                    <div class="info-item">
+                <div class="contact-form-box">
+                    <form class="contact-form" onsubmit="handleSubmit(event)">
+                        <div class="form-group">
+                            <label>Nombre de Jugador</label>
+                            <input type="text" placeholder="Tu nombre en Brawl Stars" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>ID de Brawl Stars</label>
+                            <input type="text" placeholder="#ABC123DEF456" required>
+                        </div>
+                        <div class="form-group">
+                            <label>¿Por qué te quieres unir?</label>
+                            <textarea placeholder="Cuéntanos sobre ti..." rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary">Enviar Solicitud</button>
+                    </form>
+                </div>
+
+                <div class="contact-info-box">
+                    <h3>Información de Contacto</h3>
+                    <div class="contact-info-item">
                         <i class="fab fa-discord"></i>
                         <div>
-                            <h4>Discord</h4>
-                            <p>discord.gg/oceancommunity</p>
+                            <p class="label">Discord</p>
+                            <p class="value">discord.gg/oceancommunity</p>
                         </div>
                     </div>
-                    <div class="info-item">
+                    <div class="contact-info-item">
                         <i class="fab fa-instagram"></i>
                         <div>
-                            <h4>Instagram</h4>
-                            <p>@oceancommunity.bs</p>
+                            <p class="label">Instagram</p>
+                            <p class="value">@oceancommunity.bs</p>
                         </div>
                     </div>
-                    <div class="info-item">
+                    <div class="contact-info-item">
                         <i class="fab fa-youtube"></i>
                         <div>
-                            <h4>YouTube</h4>
-                            <p>Ocean Community Channel</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
-                            <h4>Email</h4>
-                            <p>info@oceancommunity.com</p>
+                            <p class="label">YouTube</p>
+                            <p class="value">Ocean Community Channel</p>
                         </div>
                     </div>
                 </div>
-                <form class="contact-form" onsubmit="handleSubmit(event)">
-                    <input type="text" placeholder="Tu nombre de jugador" required>
-                    <input type="email" placeholder="Tu email" required>
-                    <input type="text" placeholder="Tu ID de Brawl Stars" required>
-                    <textarea placeholder="¿Por qué quieres unirte?" rows="5" required></textarea>
-                    <button type="submit" class="cta-button btn-primary">Enviar Solicitud</button>
-                </form>
             </div>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
+        <div class="footer-container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h4>Ocean Community</h4>
                     <p>La mejor comunidad de Brawl Stars del mundo</p>
                 </div>
                 <div class="footer-section">
-                    <h4>Enlaces Rápidos</h4>
+                    <h4>Enlaces</h4>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#comunidad">Comunidad</a></li>
                         <li><a href="#torneos">Torneos</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Síguenos</h4>
-                    <div class="social-links">
-                        <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
-                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
-                        <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-discord"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Ocean Community - Brawl Stars | Todos los derechos reservados | <a href="#">Política de Privacidad</a></p>
+                <p>&copy; 2026 Ocean Community - Brawl Stars. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
