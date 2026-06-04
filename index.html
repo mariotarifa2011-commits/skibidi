@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skibidi - Proyecto Innovador</title>
+    <title>Ocean Community - Brawl Stars</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -12,14 +12,14 @@
     <nav class="navbar">
         <div class="container">
             <div class="logo">
-                <i class="fas fa-music"></i> Skibidi
+                <i class="fas fa-water"></i> Ocean Community
             </div>
             <ul class="nav-links">
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#caracteristicas">Características</a></li>
-                <li><a href="#servicios">Servicios</a></li>
-                <li><a href="#galeria">Galería</a></li>
-                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                <li><a href="#miembros">Miembros</a></li>
+                <li><a href="#torneos">Torneos</a></li>
+                <li><a href="#caracteristicas">Beneficios</a></li>
                 <li><a href="#contacto">Contacto</a></li>
             </ul>
             <div class="hamburger">
@@ -33,221 +33,291 @@
     <!-- Sección Hero -->
     <section id="inicio" class="hero">
         <div class="hero-content">
-            <h1>¡Bienvenido a Skibidi!</h1>
-            <p>Un proyecto creativo y moderno que te sorprenderá</p>
+            <h1>Bienvenido a Ocean Community</h1>
+            <p>La mejor comunidad de Brawl Stars | Torneos • Entrenamientos • Diversión</p>
             <div class="hero-buttons">
-                <button class="cta-button btn-primary" onclick="scrollToSection('caracteristicas')">Descubre más</button>
-                <button class="cta-button btn-secondary" onclick="scrollToSection('contacto')">Contáctanos</button>
+                <button class="cta-button btn-primary" onclick="scrollToSection('sobre-nosotros')">Descubre la Comunidad</button>
+                <button class="cta-button btn-secondary" onclick="scrollToSection('contacto')">Únete Ahora</button>
             </div>
         </div>
         <div class="hero-animation">
-            <div class="floating-item">🎶</div>
+            <div class="floating-item">⚡</div>
         </div>
     </section>
 
-    <!-- Sección de Características -->
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre-nosotros" class="about">
+        <div class="container">
+            <h2>Sobre Ocean Community</h2>
+            <p class="section-subtitle">Conectando a los mejores jugadores de Brawl Stars</p>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Ocean Community es una comunidad vibrant de jugadores de Brawl Stars dedicados a mejorar juntos. Nos enfocamos en proporcionar un ambiente amigable y competitivo donde todos pueden crecer.</p>
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <i class="fas fa-users"></i>
+                            <h3>Comunidad Activa</h3>
+                            <p>+500 miembros participando diariamente</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-gamepad"></i>
+                            <h3>Torneos Regulares</h3>
+                            <p>Competencias semanales con premios</p>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-trophy"></i>
+                            <h3>Entrenamientos</h3>
+                            <p>Sesiones de coaching con jugadores expertos</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-crown"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Miembros -->
+    <section id="miembros" class="members">
+        <div class="container">
+            <h2>Nuestros Miembros Destacados</h2>
+            <p class="section-subtitle">Los mejores jugadores de la comunidad</p>
+            <div class="members-grid">
+                <div class="member-card">
+                    <div class="member-avatar" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>ProPlayer_01</h3>
+                    <p class="member-rank">Trofeos: 45,000</p>
+                    <p class="member-role">Capitán</p>
+                    <div class="member-brawlers">
+                        <span class="brawler">Shelly</span>
+                        <span class="brawler">Colt</span>
+                        <span class="brawler">Bull</span>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>OceanKing</h3>
+                    <p class="member-rank">Trofeos: 42,500</p>
+                    <p class="member-role">Co-Capitán</p>
+                    <div class="member-brawlers">
+                        <span class="brawler">Poco</span>
+                        <span class="brawler">Barley</span>
+                        <span class="brawler">Sprout</span>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>StrikeForce</h3>
+                    <p class="member-rank">Trofeos: 40,800</p>
+                    <p class="member-role">Moderador</p>
+                    <div class="member-brawlers">
+                        <span class="brawler">Bea</span>
+                        <span class="brawler">Sandy</span>
+                        <span class="brawler">Buzz</span>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>SkyWalker</h3>
+                    <p class="member-rank">Trofeos: 39,200</p>
+                    <p class="member-role">Entrenador</p>
+                    <div class="member-brawlers">
+                        <span class="brawler">Nita</span>
+                        <span class="brawler">Leon</span>
+                        <span class="brawler">Crow</span>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>NeonGamer</h3>
+                    <p class="member-rank">Trofeos: 38,500</p>
+                    <p class="member-role">Streamer</p>
+                    <div class="member-brawlers">
+                        <span class="brawler">Edgar</span>
+                        <span class="brawler">Amber</span>
+                        <span class="brawler">Piper</span>
+                    </div>
+                </div>
+
+                <div class="member-card">
+                    <div class="member-avatar" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>TitanForce</h3>
+                    <p class="member-rank">Trofeos: 37,800</p>
+                    <p class="member-role">Miembro VIP</p>
+                    <div class="member-brawlers">
+                        <span class="brawler">Frank</span>
+                        <span class="brawler">Gale</span>
+                        <span class="brawler">Colette</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Torneos -->
+    <section id="torneos" class="tournaments">
+        <div class="container">
+            <h2>Torneos Próximos</h2>
+            <p class="section-subtitle">Compite y demuestra tu habilidad</p>
+            <div class="tournaments-grid">
+                <div class="tournament-card active">
+                    <div class="tournament-header">
+                        <span class="tournament-badge">Activo</span>
+                        <h3>Torneo 3v3 - Solo</h3>
+                    </div>
+                    <div class="tournament-info">
+                        <div class="info-row">
+                            <i class="fas fa-calendar"></i>
+                            <span>Sábado 22:00 UTC</span>
+                        </div>
+                        <div class="info-row">
+                            <i class="fas fa-users"></i>
+                            <span>32 Equipos</span>
+                        </div>
+                        <div class="info-row">
+                            <i class="fas fa-trophy"></i>
+                            <span>Premio: 100,000 Puntos</span>
+                        </div>
+                    </div>
+                    <button class="btn-register">Inscribirse Ahora</button>
+                </div>
+
+                <div class="tournament-card">
+                    <div class="tournament-header">
+                        <span class="tournament-badge soon">Próximo</span>
+                        <h3>Dúo - Competencia</h3>
+                    </div>
+                    <div class="tournament-info">
+                        <div class="info-row">
+                            <i class="fas fa-calendar"></i>
+                            <span>Viernes 21:00 UTC</span>
+                        </div>
+                        <div class="info-row">
+                            <i class="fas fa-users"></i>
+                            <span>24 Equipos</span>
+                        </div>
+                        <div class="info-row">
+                            <i class="fas fa-trophy"></i>
+                            <span>Premio: 75,000 Puntos</span>
+                        </div>
+                    </div>
+                    <button class="btn-register">Inscribirse Ahora</button>
+                </div>
+
+                <div class="tournament-card">
+                    <div class="tournament-header">
+                        <span class="tournament-badge soon">Próximo</span>
+                        <h3>Showdown - Todos</h3>
+                    </div>
+                    <div class="tournament-info">
+                        <div class="info-row">
+                            <i class="fas fa-calendar"></i>
+                            <span>Domingo 20:00 UTC</span>
+                        </div>
+                        <div class="info-row">
+                            <i class="fas fa-users"></i>
+                            <span>64 Jugadores</span>
+                        </div>
+                        <div class="info-row">
+                            <i class="fas fa-trophy"></i>
+                            <span>Premio: 150,000 Puntos</span>
+                        </div>
+                    </div>
+                    <button class="btn-register">Inscribirse Ahora</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Características/Beneficios -->
     <section id="caracteristicas" class="features">
         <div class="container">
-            <h2>Características Principales</h2>
-            <p class="section-subtitle">Descubre lo que nos hace especiales</p>
+            <h2>Beneficios de Ser Miembro</h2>
+            <p class="section-subtitle">Disfruta de ventajas exclusivas</p>
             <div class="features-grid">
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-rocket"></i>
+                        <i class="fas fa-video"></i>
                     </div>
-                    <h3>Rápido</h3>
-                    <p>Rendimiento optimizado para una experiencia fluida y sin interrupciones</p>
+                    <h3>Entrenamientos en Vivo</h3>
+                    <p>Aprende estrategias de los mejores jugadores con sesiones de coaching personalizadas</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-palette"></i>
+                        <i class="fas fa-comments"></i>
                     </div>
-                    <h3>Diseño Moderno</h3>
-                    <p>Interfaz atractiva y responsive adaptada a cualquier dispositivo</p>
+                    <h3>Discord Exclusivo</h3>
+                    <p>Acceso a servidores de Discord con canales especializados por brawler y modo</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-lightbulb"></i>
+                        <i class="fas fa-star"></i>
                     </div>
-                    <h3>Innovador</h3>
-                    <p>Tecnología de punta y soluciones creativas para tus necesidades</p>
+                    <h3>Insignias Especiales</h3>
+                    <p>Obtén insignias que demuestren tu nivel y experiencia en la comunidad</p>
                 </div>
                 <div class="feature-card">
                     <div class="feature-icon">
-                        <i class="fas fa-wrench"></i>
+                        <i class="fas fa-gift"></i>
                     </div>
-                    <h3>Flexible</h3>
-                    <p>Fácil de personalizar y adaptar según tus requerimientos</p>
+                    <h3>Premios Mensuales</h3>
+                    <p>Participa en rifas mensuales con premios en skins y temas exclusivos</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3>Equipos Competitivos</h3>
+                    <p>Únete a equipos de juego competitivo para participar en torneos profesionales</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Red de Amigos</h3>
+                    <p>Conecta con jugadores de todo el mundo y expande tu red de gaming</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Sección de Servicios -->
-    <section id="servicios" class="services">
-        <div class="container">
-            <h2>Nuestros Servicios</h2>
-            <p class="section-subtitle">Soluciones completas para tu negocio</p>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-number">01</div>
-                    <h3>Consultoría Digital</h3>
-                    <p>Te ayudamos a transformar tu negocio con soluciones digitales innovadoras</p>
-                    <a href="#" class="service-link">Saber más →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-number">02</div>
-                    <h3>Desarrollo Web</h3>
-                    <p>Creamos sitios web modernos, rápidos y seguros para tu presencia online</p>
-                    <a href="#" class="service-link">Saber más →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-number">03</div>
-                    <h3>Diseño UI/UX</h3>
-                    <p>Diseñamos interfaces hermosas y funcionales que tus usuarios amarán</p>
-                    <a href="#" class="service-link">Saber más →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-number">04</div>
-                    <h3>Marketing Digital</h3>
-                    <p>Estrategias de marketing efectivas para aumentar tu visibilidad online</p>
-                    <a href="#" class="service-link">Saber más →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-number">05</div>
-                    <h3>Soporte 24/7</h3>
-                    <p>Equipo dedicado disponible en todo momento para resolver tus dudas</p>
-                    <a href="#" class="service-link">Saber más →</a>
-                </div>
-                <div class="service-card">
-                    <div class="service-number">06</div>
-                    <h3>Mantenimiento</h3>
-                    <p>Mantenimiento continuo para asegurar el óptimo funcionamiento</p>
-                    <a href="#" class="service-link">Saber más →</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Galería -->
-    <section id="galeria" class="gallery">
-        <div class="container">
-            <h2>Galería de Proyectos</h2>
-            <p class="section-subtitle">Algunos de nuestros mejores trabajos</p>
-            <div class="gallery-grid">
-                <div class="gallery-item" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                    <div class="gallery-overlay">
-                        <span>🌟 Proyecto 1</span>
-                    </div>
-                </div>
-                <div class="gallery-item" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
-                    <div class="gallery-overlay">
-                        <span>💫 Proyecto 2</span>
-                    </div>
-                </div>
-                <div class="gallery-item" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
-                    <div class="gallery-overlay">
-                        <span>✨ Proyecto 3</span>
-                    </div>
-                </div>
-                <div class="gallery-item" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
-                    <div class="gallery-overlay">
-                        <span>🎯 Proyecto 4</span>
-                    </div>
-                </div>
-                <div class="gallery-item" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
-                    <div class="gallery-overlay">
-                        <span>🚀 Proyecto 5</span>
-                    </div>
-                </div>
-                <div class="gallery-item" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
-                    <div class="gallery-overlay">
-                        <span>💎 Proyecto 6</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Testimonios -->
-    <section id="testimonios" class="testimonios">
-        <div class="container">
-            <h2>Lo que dicen nuestros clientes</h2>
-            <p class="section-subtitle">Historias de éxito y satisfacción</p>
-            <div class="testimonios-grid">
-                <div class="testimonio-card">
-                    <div class="testimonios-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>"Excelente servicio, muy profesionales y entregaron el proyecto a tiempo. Totalmente recomendado!"</p>
-                    <div class="testimonio-author">
-                        <img src="https://ui-avatars.com/api/?name=Juan+Rodriguez&background=667eea&color=fff" alt="Juan">
-                        <div>
-                            <strong>Juan Rodríguez</strong>
-                            <span>CEO - Tech Company</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonio-card">
-                    <div class="testimonios-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>"El equipo fue muy atento con todas nuestras necesidades. El resultado superó nuestras expectativas!"</p>
-                    <div class="testimonio-author">
-                        <img src="https://ui-avatars.com/api/?name=Maria+Lopez&background=764ba2&color=fff" alt="Maria">
-                        <div>
-                            <strong>María López</strong>
-                            <span>Directora - Marketing Pro</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonio-card">
-                    <div class="testimonios-stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>"Increíble experiencia de trabajo. Muy creativos, responsables y dedicados a sus proyectos!"</p>
-                    <div class="testimonio-author">
-                        <img src="https://ui-avatars.com/api/?name=Carlos+Mendez&background=f5576c&color=fff" alt="Carlos">
-                        <div>
-                            <strong>Carlos Méndez</strong>
-                            <span>Emprendedor - StartUp</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Stats -->
+    <!-- Sección de Estadísticas -->
     <section class="stats">
         <div class="container">
             <div class="stat-item">
+                <div class="stat-number">500+</div>
+                <div class="stat-label">Miembros Activos</div>
+            </div>
+            <div class="stat-item">
                 <div class="stat-number">150+</div>
-                <div class="stat-label">Proyectos Completados</div>
+                <div class="stat-label">Torneos Realizados</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">120</div>
-                <div class="stat-label">Clientes Satisfechos</div>
+                <div class="stat-number">2.5M+</div>
+                <div class="stat-label">Trofeos en Total</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number">50</div>
-                <div class="stat-label">Profesionales</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number">8+</div>
-                <div class="stat-label">Años de Experiencia</div>
+                <div class="stat-number">24/7</div>
+                <div class="stat-label">Comunidad Activa</div>
             </div>
         </div>
     </section>
@@ -255,54 +325,54 @@
     <!-- Sección CTA -->
     <section class="cta-section">
         <div class="container">
-            <h2>¿Listo para transformar tu proyecto?</h2>
-            <p>Contacta con nosotros hoy y comienza tu viaje hacia el éxito digital</p>
-            <button class="cta-button btn-large" onclick="scrollToSection('contacto')">Comienza Ahora</button>
+            <h2>¿Listo para Unirte?</h2>
+            <p>Sé parte de la mejor comunidad de Brawl Stars y lleva tu juego al siguiente nivel</p>
+            <button class="cta-button btn-large" onclick="scrollToSection('contacto')">Únete a Ocean Community</button>
         </div>
     </section>
 
     <!-- Sección de Contacto -->
     <section id="contacto" class="contact">
         <div class="container">
-            <h2>¡Ponte en Contacto!</h2>
-            <p class="section-subtitle">Estamos aquí para ayudarte</p>
+            <h2>¡Únete a Nosotros!</h2>
+            <p class="section-subtitle">Completa el formulario para ser parte de Ocean Community</p>
             <div class="contact-wrapper">
                 <div class="contact-info">
                     <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i class="fab fa-discord"></i>
                         <div>
-                            <h4>Ubicación</h4>
-                            <p>Calle Principal 123, Ciudad</p>
+                            <h4>Discord</h4>
+                            <p>discord.gg/oceancommunity</p>
                         </div>
                     </div>
                     <div class="info-item">
-                        <i class="fas fa-phone"></i>
+                        <i class="fab fa-instagram"></i>
                         <div>
-                            <h4>Teléfono</h4>
-                            <p>+34 123 456 789</p>
+                            <h4>Instagram</h4>
+                            <p>@oceancommunity.bs</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-youtube"></i>
+                        <div>
+                            <h4>YouTube</h4>
+                            <p>Ocean Community Channel</p>
                         </div>
                     </div>
                     <div class="info-item">
                         <i class="fas fa-envelope"></i>
                         <div>
                             <h4>Email</h4>
-                            <p>info@skibidi.com</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-clock"></i>
-                        <div>
-                            <h4>Horarios</h4>
-                            <p>Lun - Vie: 9:00 - 18:00</p>
+                            <p>info@oceancommunity.com</p>
                         </div>
                     </div>
                 </div>
                 <form class="contact-form" onsubmit="handleSubmit(event)">
-                    <input type="text" placeholder="Tu nombre" required>
+                    <input type="text" placeholder="Tu nombre de jugador" required>
                     <input type="email" placeholder="Tu email" required>
-                    <input type="text" placeholder="Asunto" required>
-                    <textarea placeholder="Tu mensaje" rows="5" required></textarea>
-                    <button type="submit" class="cta-button btn-primary">Enviar Mensaje</button>
+                    <input type="text" placeholder="Tu ID de Brawl Stars" required>
+                    <textarea placeholder="¿Por qué quieres unirte?" rows="5" required></textarea>
+                    <button type="submit" class="cta-button btn-primary">Enviar Solicitud</button>
                 </form>
             </div>
         </div>
@@ -313,30 +383,30 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>Skibidi</h4>
-                    <p>Tu socio en transformación digital</p>
+                    <h4>Ocean Community</h4>
+                    <p>La mejor comunidad de Brawl Stars del mundo</p>
                 </div>
                 <div class="footer-section">
                     <h4>Enlaces Rápidos</h4>
                     <ul>
                         <li><a href="#inicio">Inicio</a></li>
-                        <li><a href="#caracteristicas">Características</a></li>
-                        <li><a href="#servicios">Servicios</a></li>
+                        <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#torneos">Torneos</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
                     <h4>Síguenos</h4>
                     <div class="social-links">
-                        <a href="#" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fab fa-youtube"></i></a>
                         <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
-                        <a href="#" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
-                        <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
                     </div>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Skibidi - Todos los derechos reservados | <a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+                <p>&copy; 2026 Ocean Community - Brawl Stars | Todos los derechos reservados | <a href="#">Política de Privacidad</a></p>
             </div>
         </div>
     </footer>
