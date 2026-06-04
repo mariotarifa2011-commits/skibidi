@@ -22,7 +22,6 @@
                     <li><a href="#inicio">Inicio</a></li>
                     <li><a href="#comunidad">Comunidad</a></li>
                     <li><a href="#torneos">Torneos</a></li>
-                    <li><a href="#miembros">Miembros</a></li>
                 </ul>
                 <button class="btn-join" onclick="scrollToSection('contacto')">Únete</button>
             </div>
@@ -40,7 +39,10 @@
             <div class="hero-text">
                 <h1>Bienvenido a Ocean Community</h1>
                 <p>La mejor comunidad de jugadores de Brawl Stars. Compite, entrena y crece con nosotros.</p>
-                <button class="btn-primary" onclick="scrollToSection('contacto')">Unirse a la Comunidad</button>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="scrollToSection('contacto')">Unirse a la Comunidad</button>
+                    <button class="btn-secondary" onclick="scrollToSection('torneos')">Ver Torneos</button>
+                </div>
             </div>
             <div class="hero-visual">
                 <div class="hero-card">
@@ -118,7 +120,7 @@
                             <span><i class="fas fa-trophy"></i> 100,000 Puntos</span>
                         </div>
                     </div>
-                    <button class="btn-small">Participar</button>
+                    <button class="btn-participate">Participar</button>
                 </div>
 
                 <div class="tournament-item">
@@ -133,7 +135,7 @@
                             <span><i class="fas fa-trophy"></i> 75,000 Puntos</span>
                         </div>
                     </div>
-                    <button class="btn-small">Participar</button>
+                    <button class="btn-participate">Participar</button>
                 </div>
 
                 <div class="tournament-item">
@@ -148,99 +150,7 @@
                             <span><i class="fas fa-trophy"></i> 150,000 Puntos</span>
                         </div>
                     </div>
-                    <button class="btn-small">Participar</button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Miembros Destacados -->
-    <section id="miembros" class="members">
-        <div class="section-container">
-            <div class="section-header">
-                <h2>Miembros Destacados</h2>
-                <p>Los mejores jugadores de Ocean Community</p>
-            </div>
-
-            <div class="members-grid">
-                <div class="member-box">
-                    <div class="member-header">
-                        <div class="member-avatar" style="background: linear-gradient(135deg, #667eea, #764ba2);">
-                            <i class="fas fa-crown"></i>
-                        </div>
-                        <div class="member-info">
-                            <h3>ProPlayer_01</h3>
-                            <p class="member-title">Capitán</p>
-                        </div>
-                    </div>
-                    <div class="member-stats">
-                        <span class="stat">45,000 Trofeos</span>
-                    </div>
-                    <div class="member-tags">
-                        <span class="tag">Shelly</span>
-                        <span class="tag">Colt</span>
-                        <span class="tag">Bull</span>
-                    </div>
-                </div>
-
-                <div class="member-box">
-                    <div class="member-header">
-                        <div class="member-avatar" style="background: linear-gradient(135deg, #f093fb, #f5576c);">
-                            <i class="fas fa-star"></i>
-                        </div>
-                        <div class="member-info">
-                            <h3>OceanKing</h3>
-                            <p class="member-title">Co-Capitán</p>
-                        </div>
-                    </div>
-                    <div class="member-stats">
-                        <span class="stat">42,500 Trofeos</span>
-                    </div>
-                    <div class="member-tags">
-                        <span class="tag">Poco</span>
-                        <span class="tag">Barley</span>
-                        <span class="tag">Sprout</span>
-                    </div>
-                </div>
-
-                <div class="member-box">
-                    <div class="member-header">
-                        <div class="member-avatar" style="background: linear-gradient(135deg, #4facfe, #00f2fe);">
-                            <i class="fas fa-zap"></i>
-                        </div>
-                        <div class="member-info">
-                            <h3>StrikeForce</h3>
-                            <p class="member-title">Moderador</p>
-                        </div>
-                    </div>
-                    <div class="member-stats">
-                        <span class="stat">40,800 Trofeos</span>
-                    </div>
-                    <div class="member-tags">
-                        <span class="tag">Bea</span>
-                        <span class="tag">Sandy</span>
-                        <span class="tag">Buzz</span>
-                    </div>
-                </div>
-
-                <div class="member-box">
-                    <div class="member-header">
-                        <div class="member-avatar" style="background: linear-gradient(135deg, #43e97b, #38f9d7);">
-                            <i class="fas fa-gamepad"></i>
-                        </div>
-                        <div class="member-info">
-                            <h3>SkyWalker</h3>
-                            <p class="member-title">Entrenador</p>
-                        </div>
-                    </div>
-                    <div class="member-stats">
-                        <span class="stat">39,200 Trofeos</span>
-                    </div>
-                    <div class="member-tags">
-                        <span class="tag">Nita</span>
-                        <span class="tag">Leon</span>
-                        <span class="tag">Crow</span>
-                    </div>
+                    <button class="btn-participate">Participar</button>
                 </div>
             </div>
         </div>
@@ -275,7 +185,7 @@
         <div class="section-container cta-content">
             <h2>¿Listo para Unirte?</h2>
             <p>Sé parte de la mejor comunidad de Brawl Stars y lleva tu juego al siguiente nivel</p>
-            <button class="btn-large" onclick="scrollToSection('contacto')">Unirse Ahora</button>
+            <button class="btn-cta" onclick="scrollToSection('contacto')">Unirse Ahora</button>
         </div>
     </section>
 
@@ -306,7 +216,7 @@
                             <label>¿Por qué te quieres unir?</label>
                             <textarea placeholder="Cuéntanos sobre ti..." rows="4" required></textarea>
                         </div>
-                        <button type="submit" class="btn-primary">Enviar Solicitud</button>
+                        <button type="submit" class="btn-submit">Enviar Solicitud</button>
                     </form>
                 </div>
 
